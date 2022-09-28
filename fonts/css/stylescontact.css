@@ -1,0 +1,250 @@
+
+  /* ===========contact.html========= */
+
+.contact-page{
+    background: #fff;
+    background: #0078AA;
+  }
+  
+.contact-page .nav ul li a{
+    color: #041562;
+  }
+.contact-page .nav ul li a:hover{
+    color: #DA1212;
+}
+.contact-banner{
+    position: relative;
+    height: 50vh;
+    background: #fff;
+    background: #0078AA;
+    padding-top: 3rem;
+}
+.contact-banner .section-heading{
+  text-align: center;
+}
+.contact-banner .section-heading h2{
+  text-transform: capitalize;
+  color: #F9E4D4;
+  font-weight: 600;
+  font-size: 2.8rem;
+ 
+}
+.contact-banner .section-heading span{
+  display: inline-block;
+  margin-top: 0rem;
+  font-size: 1.2rem;
+  color: #DA1212;
+  color: #041562;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+.contact-info{
+  position: relative;
+  background: #948BB6;
+   
+  background: linear-gradient(#0078AA ,#948BB6);
+
+  height: 30vh;
+  /* width: 100; */
+  display: flex;
+  justify-content: center;
+}
+.contact-info .contact-form{
+  position: absolute;
+  top: -90%;
+  width: 800px;
+  height: 500px;
+  background: #fff;
+  z-index: 30;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 5px;
+  display: flex;
+}
+.form{
+width: 100%;
+padding: 2rem;
+text-align: center;
+}
+.form :where(input , textarea){
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  border: #041562 solid 0.5px;
+  padding:0.5rem 1rem;
+  position: relative;
+  border-radius: 5px;
+}
+.form :where(input:focus , textarea:focus){
+  border: none;
+  outline: #777777 solid 1px;
+}
+.form ::placeholder{
+  position: absolute;
+  top: 0.2rem;
+  color: black;
+  font-size: 0.87rem;
+  font-family: 'Nova Mono', monospace; 
+  text-transform: lowercase;
+  opacity: 0.5;
+}
+.form textarea{
+width: 100%;
+height: 100px;
+}
+.form .send{
+  width: 150px;
+  margin: 0.5rem auto;
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif; 
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #fff;
+  background: #DA1212;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 0;
+}
+.images{
+  position: relative;
+opacity: 1;
+width: 0;
+background: #F9E4D4;
+}
+.images h2{
+  margin-top: 6rem;
+  position: relative;
+  z-index: 888;
+  line-height: 1.3;
+  padding: 0 0.30rem;
+  color: #F9E4D4;
+}
+
+.images .services-right-dec .squre{
+width: 40px;
+height: 20px;
+z-index: 10;
+}
+.images .services-right-dec{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 0rem;
+  right: -20rem;
+  z-index: 10;
+ display: none;
+} 
+.images img{
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+.socialss{
+  color: #F9E4D4;
+  background: #948BB6;
+  height: 150px;
+  padding: 5rem 0;
+}
+.socials{
+  color: #F9E4D4;
+  background: #948BB6;
+
+  display: flex;
+  justify-content: space-between;
+
+}
+.socials h3 span{
+  color: #F9E4D4;
+}
+.socials span{
+  color: #fff;
+}
+.socials h3{
+  font-size: 1rem;
+}
+.socials .icons{
+  color: #F9E4D4;
+}
+
+
+@media screen and (max-width: 992px) {
+
+  .contact-info .contact-form{
+    width: 600px;
+  }
+  .contact-banner .section-heading h2{
+   width: 600px;
+   margin: 0 auto;
+    font-size: 2.8rem;
+  }
+  .socialss{
+  
+    padding: 10rem 2rem;
+  }
+
+}
+   
+
+@media screen and (max-width: 768px) {
+
+  .contact-info .contact-form{
+    width: 450px;
+  }
+  .contact-banner .section-heading h2{
+   width: 450px;
+   margin: 0 auto;
+    font-size: 2.8rem;
+  }
+  .socialss{
+    padding: 10rem 2rem;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .contact-info .contact-form{
+    position: absolute;
+    top: -98%;
+    width: 800px;
+    height: 400px;
+  
+  }
+  .contact-info .contact-form{
+    width: 300px;
+  }
+  .contact-banner .section-heading h2{
+   width: 300px;
+   margin: 0 auto;
+   margin-bottom:0 ;
+    font-size: 2rem;
+  }
+  .socialss{
+    margin: 0;
+    padding: 2rem 2rem 10rem 2rem;
+  }
+  .socials{
+    display: block;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+  
+  }
+}
+
+@media screen and (max-width:280px) {
+  .contact-info .contact-form{
+    position: absolute;
+    top: -90%;
+
+  }
+  .contact-info .contact-form{
+    width: 200px;
+  }
+  .contact-banner .section-heading h2{
+   width: 200px;
+   margin: 0 auto;
+    font-size: 1.5rem;
+  }
+  .socialss{
+    padding: 10rem 2rem;
+  }
+}

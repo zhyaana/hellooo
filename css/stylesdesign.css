@@ -1,0 +1,370 @@
+.design-page{
+    background: #fff;
+    /* padding-bottom: 2rem; */
+}
+
+.design-page .nav ul li a{
+    color: #041562;
+  }
+.design-page .nav ul li a:hover{
+    color: #DA1212;
+}
+.design-page .logo{
+    width: 80px;
+    height: 80px;
+}
+.design-banner{
+    margin-top: 0;
+    padding-bottom: 2rem;
+    
+}
+.design-banner  .about-image-right {
+  position: absolute;
+  top: 3rem;
+  right: 9rem;
+}
+.design-banner  .about-image-right .services-right-dec{
+    position: absolute;
+    right: 0;
+}
+.design-banner  .about-image-right .services-right-dec .squre{
+   width: 50px;
+   height: 20px;
+}
+
+/* features */
+.features{
+    background: #E7F6F2;
+    
+    height:90vh;
+
+    padding: 2rem;
+}
+
+.features .bg-img{
+    background: url(../img/556103.jpg) top/cover no-repeat;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.features .bg-img::before{
+    content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background:#041562;
+   opacity: 0.3;
+}
+.features:hover .bg-img::before {
+  opacity: 0;
+}
+.features .bg-img .content{
+background: #041562;
+color: #fff;
+padding: 4rem 3rem ;
+border-radius: 5px;
+text-align: center;
+position: relative;
+z-index: 30;
+}
+.features .bg-img .content  h3{
+    font-size: 2.5rem;
+}
+.features .bg-img .content a{
+    display: inline-block;
+    margin-top: 2rem;
+    background: #DA1212;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+
+}
+
+
+/* fetures detail */
+.features-detail {
+    margin:5rem 0;
+}
+.features-detail .feature {
+    display: flex;
+    border-bottom: #E7F6F2 0.1rem solid;
+  margin-bottom: 1rem;
+}
+.features-detail .feature div h4{
+    color: #041562;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.features-detail .feature div p{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 4s00;
+    width: 70%;
+    font-family: 'Montserrat', sans-serif;
+}
+.feature .icon{
+    margin-right: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #31C6D4;
+    border-bottom: none;
+}
+
+.quote{
+    height: 200px;
+    background: #F9E4D4;
+}
+
+
+/* ===============gallary=========== */
+.products-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.products{
+  width: 100%;
+  margin: 4rem auto;
+  display: grid;
+  gap: 1rem;
+  }
+.filters-container{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0 1rem;
+}
+
+.search-input{
+padding: 0.4rem 1.8rem 0.4rem 0.3rem;
+background:#041562;
+border: transparent;
+margin-right: 1rem;
+border-radius: 5px;
+color: #fff;
+}
+.search-input::placeholder{
+  color: #fff;
+}
+.category-btn{
+    display: inline-block;
+    margin: 0.50rem 0.25rem;
+    padding: 0.25rem 0.60rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    border: 1px solid #041562;
+    background: transparent;
+    color: #041562;
+    cursor: pointer;
+    transition: all linear 0.4s;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+.category-btn.active{
+  background: #041562;
+  color: #fff;
+}
+.category-btn:hover{
+  background: #041562;
+  color: #fff;
+}
+.product{
+    margin-bottom: 1rem;
+}
+.product .img{
+  width: 100%;
+  
+  }
+.product-img{
+    border-radius: 5px;
+    height: 15rem;
+    border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+}
+  .product .foot{
+   padding: 0.75rem 0;
+   text-align: left;
+   height: 10rem; 
+   border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+  }
+  .product-name{
+    margin-bottom: 0.25rem;  
+    background: #F9E4D4;
+    color: #041562;
+    border-radius: 5px;
+    width: 200px;
+    padding: 0.5rem 0;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+  }
+ 
+  @media screen and (max-width:992px) {
+    .products-container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    .products-container .product-img{
+        height: 10rem;
+    }
+    .product{
+        margin-bottom: 0;
+    }
+}
+@media screen and (mxn-width:768px) {
+  .gallaries{
+      grid-template-columns: 200px 1fr;
+  }
+}
+
+
+
+.btn-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.page-btn{
+  width: 3rem;
+  height: 1.5rem;
+  background: var(--clr-primary-7);
+  border: transparent;
+  border-radius: 5px;
+  margin: 0.3rem;
+  transition: var(--transition);
+  display: none;
+}
+@media screen and (max-width:775px) {
+  .btn-container{
+    margin:  0 auto;
+    max-width: 700px;
+  }
+}
+  .active-btn {
+    background: #041562;
+    color: #fff;
+  }
+  .prev-btn,
+  .next-btn {
+    background: transparent;
+    border: 2px solid #041562;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    color: #041562;
+  } 
+.prev-btn:hover,
+.next-btn:hover{
+  background: #041562;
+  color: #fff;
+}
+
+
+/* ============slogans============= */
+
+.slogans{
+    clear: both;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+.design-banner{
+    margin-top: -2rem;
+    padding-bottom: 2rem;
+    
+}
+
+.design-banner  .about-image-right {
+  position: absolute;
+  top: 9rem;
+  right: 9rem;
+  width: 300px;
+}
+.design-banner  .about-image-right .services-right-dec{
+    width: 200px;
+}
+
+
+/* feature deatal */
+.features-detail {
+  margin:5rem 0;
+  padding: 0 2rem;
+}
+
+.search-input{
+ display: none;
+}
+
+}
+
+@media screen and (max-width: 992px) {
+  .design-banner .about-content-left{
+    margin: 0 auto;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .design-banner{
+  
+    background: #fff;
+    background: linear-gradient(#948BB6 , #E7F6F2);
+    /* padding-bottom: 2rem; */
+   
+}
+.features{
+  padding: 0;
+}
+.features-detail {
+  margin:5rem 0;
+  padding: 0 0.5rem;
+}
+}
+
+
+@media screen and (max-width: 576px) {
+  .design-banner .about-content-left{
+   margin-top: 0;
+   padding-top: 0;
+    
+}
+    .products-container{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .products-container .product-img{
+        height: 10rem;
+    }
+    .product{
+        margin-bottom: 0;
+    }
+
+
+ 
+}
+
+
+
