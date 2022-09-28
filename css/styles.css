@@ -1350,6 +1350,7 @@ padding: 0;
     /* -webkit-animation: spi 2s linear infinite;
             animation: spi 2s linear infinite; */
     z-index:1001;
+	  display:none;
   }
   
   .loader:before {
@@ -1365,6 +1366,7 @@ padding: 0;
     border-radius:50%;
     -webkit-animation: spin 2s linear infinite;
             animation: spin 2s linear infinite;
+	  display:none;
   }
   
   .loader:after {
@@ -1379,6 +1381,7 @@ padding: 0;
     border-radius:100%;
     -webkit-animation: spi 2.5s linear infinite;
             animation: spi 2.5s linear infinite;
+	  display:none;
   }
   
   @-webkit-keyframes spin {
